@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .colors{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 500px;
+            border: 2px solid black;
+            background-color: rgb(105, 52, 154);
+        }
+        .btn{
+            width: 40px;
+            height: 20px;
+            padding: 10px;
+            font-size: 18px;
+            
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="colors">
+
+    </div>
+
+    <div style="display: flex;">
+        <div class="red btn">red</div>
+        <div class="yellow btn ">yellow</div>
+        <div class="green btn ">green</div>
+        <div class="black btn">black</div>
+    
+    </div>
+
+    <script>
+        const colors = document.querySelector('.colors');
+        const red = document.querySelector('.red');
+        const yellow = document.querySelector('.yellow');
+        const green = document.querySelector('.green');
+        const black = document.querySelector('.black');
+
+        red.addEventListener('click',()=>{
+            colors.style.backgroundColor = 'red';
+        })
+        yellow.addEventListener('click',()=>{
+            colors.style.backgroundColor = 'yellow';
+        })
+        green.addEventListener('click',()=>{
+            colors.style.backgroundColor = 'green';
+        })
+        black.addEventListener('click',()=>{
+            colors.style.backgroundColor = 'black';
+        })
+    </script>
+
+
+</body>
+</html>

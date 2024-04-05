@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue{
+            padding:10px;
+            font-size: 18px;
+            color: white;
+            background-color: blue;
+            width: 40px;
+            height: 20px;
+            cursor: pointer;
+            
+        }
+        .blue-show{
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+            position: absolute;
+            display: none;
+            position: absolute;
+            
+
+        }
+        .red{
+            padding:10px;
+            font-size: 18px;
+            color: white;
+            background-color: red;
+            width: 40px;
+            height: 20px;
+            cursor: pointer;
+
+        }
+        .red-show{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            position: absolute;
+            
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .green{
+            padding:10px;
+            font-size: 18px;
+            color: white;
+            background-color: green;
+            width: 40px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .green-show{
+            width: 500px;
+            height: 500px;
+            background-color: green;
+            display: none;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="blue">Blue</div>
+        <div class="red">Red</div>
+        <div class="green">green</div>
+    </header>
+
+    <div class="main">
+
+        <div class="blue-show">
+
+        </div>
+        <div class="red-show">
+    
+        </div>
+        <div class="green-show">
+
+        </div>
+
+    </div>  
+    
+    <script>
+        const blue = document.querySelector('.blue');
+        const red = document.querySelector('.red');
+        const green = document.querySelector('.green');
+        const blueShow = document.querySelector('.blue-show');
+        const redShow = document.querySelector('.red-show');
+        const greenShow = document.querySelector('.green-show');
+
+        blue.addEventListener('click',()=>{
+         blueShow.style.display = 'block';
+            redShow.style.display = 'none';
+            greenShow.style.display = 'none';
+        })
+        red.addEventListener('click',()=>{
+             redShow.style.display = 'block';
+            blueShow.style.display = 'none';
+            greenShow.style.display = 'none';
+        })
+        green.addEventListener('click',()=>{
+            // greenShow.style.display = 'block';
+            blueShow.style.display = 'none';
+            redShow.style.display = 'none';
+            greenShow.style.display = 'block';
+        })
+    </script>
+</body>
+</html>

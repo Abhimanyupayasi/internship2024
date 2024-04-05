@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    background-color: #f5f5f5;
+}
+
+header{
+    witdh: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    border-bottom: 2px solid rgb(222, 85, 0);
+    align-items: center;
+
+}
+
+/* bicho bich ke liye --- upar se niche align-items: center; karna padega */
+/* daye se bhi bich me baye se bhi bich me justyfy content: center karna padega */
+
+.man{
+
+    width: 10%;
+
+}
+
+.man>i{
+    font-size: 30px;
+    color: rgb(222, 85, 0);
+}
+.login{
+    width: 15%;
+
+}
+.search{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+}
+
+.search>input{
+    width: 70%;
+    
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid rgb(222, 85, 0);
+
+}
+.btn{
+    width: 20%;
+    height:30px ;
+    background-color: rgb(222, 85, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.cart{
+    width: 10%;
+}
+
+.login{
+    display: flex;
+    gap: 10px;
+}
+.login>a{
+    color: black;
+    text-decoration:none;
+    font-size: 18px;
+}
+
+.login>a:hover{
+    color: rgb(222, 85, 0);
+
+}
+.same{
+    color: black;
+    text-decoration:none;
+    font-size: 18px;
+    margin-right: 10px;
+
+}
+
+.same:hover{
+    color: rgb(222, 85, 0);
+
+}
+
+.cart{
+    gap: 40px;
+}
+
+.cart>i{
+    font-size: 18px;
+    color: rgb(255, 34, 0);
+}
+.main{
+    width: 100%;
+    display: flex;
+    height: 250Px;
+   
+    align-items: center;
+    color: rgb(255, 34, 0);
+}
+.div{
+
+    width: 50%;
+    text-align: center;
+
+}
+
+.bell>i{
+    font-size: 30px;
+    color: rgb(222, 85, 0);
+}
+
+
+

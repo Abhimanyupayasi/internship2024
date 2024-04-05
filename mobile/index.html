@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+        }
+        body html{
+            height: 100%;
+            width: 100%;
+           
+            
+
+        }
+        .main{
+            width: 90%;
+            border: 2px solid rgb(105, 52, 154);
+            height: 500px;
+            
+            margin-left: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .main2{
+            margin-top: 20px;
+            width: 45%;
+            height: 200px;
+            border: 2px solid rgb(105, 52, 154);
+
+        }
+        @media (max-width: 850px) {
+            .main{
+                flex-direction: column;
+            }
+            .main2{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main2">
+
+        </div>
+        <div class="main2">
+
+        </div>
+    </div>
+</body>
+</html>
